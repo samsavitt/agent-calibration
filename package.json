@@ -5,6 +5,8 @@
   "type": "module",
   "description": "Behavioral fingerprinting for LLM agent procurement markets.",
   "scripts": {
-    "fingerprint": "node bin/fingerprint.mjs"
+    "fingerprint": "node bin/fingerprint.mjs",
+    "day3": "node bin/day3-gate.mjs",
+    "clerk:gate": "python3 tools/trajectory_clerk_gate.py"
   }
 }

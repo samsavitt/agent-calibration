@@ -1,5 +1,8 @@
 node_modules/
+__pycache__/
+*.pyc
 runs/*.json
+runs/day3-*/
 !runs/.gitkeep
 .env
 .env.local

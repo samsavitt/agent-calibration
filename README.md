@@ -36,13 +36,21 @@ npm run fingerprint
 
 # Run against a specific log file
 node bin/fingerprint.mjs path/to/runs.json
+
+# Run the Day-3 mechanistic gate against Gauntlet regimes
+npm run day3
+
+# Convert a Day-3 gate report into Clerk ledger entries
+npm run clerk:gate -- runs/day3-<timestamp>/gate-report.json
 ```
 
-**Input** — a JSON array of round records, each containing per-agent bid price, final score, shortlist/accept events, reputation delta, and buyer strategy. Schema: `src/ingest.mjs`.
+**Input** — a JSON array of round records, each containing per-agent bid price, final score, shortlist/accept events, reputation delta, and buyer strategy. Schema: `src/ingest.mjs`. The current source fixture is `Lab/gauntlet/arena/outcomes/all-runs.json`.
 
 **Output** — two files written to `runs/`:
 - `fingerprints.json` — behavioral parameters and misranking flags per agent
 - `summary.md` — readable report naming misranked agents and the driver for each
+
+The Day-3 gate writes a gitignored `runs/day3-<timestamp>/` bundle containing regime inputs, per-regime fingerprint reports, `gate-report.json`, `summary.md`, and optional Clerk ledger/report artifacts. The gate includes positive regimes and a negative control.
 
 ## Example output
 
@@ -56,7 +64,7 @@ FastBrief: MISRANKED
 
 ## Status
 
-Early-stage. Validated on single-tournament runs (9 rounds, 4 agents, 3 buyer strategies). The next validation target is >60% correct misranking identification across 3+ varied tournament simulations with different buyer strategy distributions. A tournament variation harness is in progress.
+Early-stage. Validated on single-tournament runs (9 rounds, 4 agents, 3 buyer strategies) and a Day-3 variation harness over 4 positive Gauntlet tournament regimes plus 1 negative control. The next validation target is richer Gauntlet live-runtime traces, especially gated actions, rework/dispute paths, and non-scripted reputation movement.
 
 ## Data format
 
