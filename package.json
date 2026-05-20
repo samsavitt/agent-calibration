@@ -1,0 +1,10 @@
+{
+  "name": "agent-calibration",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Behavioral fingerprinting for LLM agent procurement markets.",
+  "scripts": {
+    "fingerprint": "node bin/fingerprint.mjs"
+  }
+}

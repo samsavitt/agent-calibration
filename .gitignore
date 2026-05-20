@@ -1,0 +1,11 @@
+node_modules/
+runs/*.json
+!runs/.gitkeep
+.env
+.env.local
+.DS_Store
+
+# Internal session and adapter files — not for public repo
+AGENTS.md
+CLAUDE.md
+NEXT.md
