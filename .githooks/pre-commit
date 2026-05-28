@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+VAULT=~/Documents/vaults/jarvis-one
+
+if command -v gitleaks &>/dev/null; then
+  gitleaks protect --staged --no-banner || exit 1
+fi
+
+set +e
+python3 "$VAULT/.ai/tools/swoop-1d-audit.py" --repo .
+audit_status=$?
+set -e
+if [[ "$audit_status" -eq 1 ]]; then
+  exit 1
+fi
+if [[ "$audit_status" -ne 0 && "$audit_status" -ne 2 ]]; then
+  exit "$audit_status"
+fi
+python3 "$VAULT/.ai/tools/cli_parity_audit.py" --repo . || exit 1
