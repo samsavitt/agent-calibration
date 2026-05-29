@@ -1,7 +1,7 @@
 ---
 schema: repo-state/v1
 repo_type: lab_experiment
-capabilities: []
+capabilities: [security]
 environment: Lab
 ---
 

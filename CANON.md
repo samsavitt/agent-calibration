@@ -2,7 +2,7 @@
 
 Universal federal rules for Vault, Lab, Ops, Studio, Agora, ai-learning, and future governed workspaces. CANON contains the constitution only: principles and rules. Operating procedures, session state, logs, schemas, and adapter mechanics live elsewhere.
 
-Last updated: 2026-05-28
+Last updated: 2026-05-29
 
 ---
 
@@ -46,9 +46,9 @@ CLI authority is separately enumerated. **Full-authority CLIs** operate on all g
 
 **R-08 — Anti-gaming.** Where actors can benefit from gaming a rule, the rule must include a guardrail, independent cross-check, or structural separation between incentive and measurement.
 
-**R-09 — Capability governance.** Capability building is a durable process, not a rescue action. The capability layer must maintain admission, freshness, retirement, conflict resolution, and mappings from capabilities to federal rules.
+**R-09 — Capability governance.** Capability building is a durable process, not a rescue action. Every governed repo must declare its capabilities in its adapter files; a false or missing declaration is a blocking audit condition. The capability layer must maintain admission, freshness, retirement, conflict resolution, and mappings from capabilities to federal rules.
 
-**R-10 — Conditional federal rules.** Conditional federal rules apply only when their condition is true for a repo or surface. Current conditions include generation project, AI model in governance pipeline, agent runtime, algorithmic decision-making, multi-regime environment, state/local autonomy, and state-changing deployment.
+**R-10 — Conditional federal rules.** Conditional federal rules apply only when their condition is true for a repo or surface. Current conditions include generation project, AI model in governance pipeline, agent runtime, data/modeling work, algorithmic decision-making, multi-regime environment, state/local autonomy, and state-changing deployment.
 
 **R-11 — AI and agent surfaces.** If an AI model stores governance knowledge in parametric form, governance knowledge must also exist in an externally updateable non-parametric layer. If agent runtimes act on a governed surface, they need API, CLI, and named skill or workflow access.
 
@@ -59,3 +59,7 @@ CLI authority is separately enumerated. **Full-authority CLIs** operate on all g
 **R-14 — Parallel dispatch and communication feasibility.** Parallel work is allowed only when co-dispatched inputs are independent and contradiction-resolution cost is bounded. Communication-path feasibility is a precondition for enforceability.
 
 **R-15 — External-effect gates.** External publication, live capital, irreversible operations, destructive repo actions, and shared-infrastructure changes require the named approval path for that surface. Agora queues; Sam posts.
+
+**R-16 — Code-change discipline.** Code work follows four gates: think before coding, simplicity first, surgical changes, and goal-driven execution. Surface assumptions and tradeoffs before acting; write the minimum code that solves the problem; touch only lines traceable to the request and clean only residue created by the change; define success criteria and verify them before claiming completion. If ambiguity prevents a surgical, verifiable change, stop and name the ambiguity.
+
+**R-17 — Data and model rigor.** Data/modeling work starts from the decision it serves, the unit of analysis, the target/label or defensible proxy, data provenance, leakage and contamination risks, and the evaluation split before model choice. It must compare against a simple baseline, justify added complexity (ensembles, random forests or boosting, neural models, causal or simulation layers, regression/classification hybrids), align the training objective with the deployed decision, report uncertainty and error slices, and document refresh or retirement conditions. If no real outcome or defensible proxy exists, do not present regression, classification, or ensemble output as validated modeling.

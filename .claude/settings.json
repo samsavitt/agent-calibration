@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import sys,json,subprocess,shutil; d=json.load(sys.stdin); f=d.get('file_path',''); r=shutil.which('ruff'); subprocess.run([r,'check','--fix',f],capture_output=True) if r and f.endswith('.py') else None\"",
+            "statusMessage": "Ruff lint..."
+          }
+        ]
+      }
+    ]
+  }
+}
