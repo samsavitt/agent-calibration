@@ -2,7 +2,7 @@
 
 Universal federal rules for Vault, Lab, Ops, Studio, Agora, ai-learning, and future governed workspaces. CANON contains the constitution only: principles and rules. Operating procedures, session state, logs, schemas, and adapter mechanics live elsewhere.
 
-Last updated: 2026-05-29
+Last updated: 2026-06-04
 
 ---
 
@@ -28,7 +28,7 @@ Last updated: 2026-05-29
 
 ## Rules
 
-**R-01 — Session outcomes and claims.** Every session produces a running artifact, committed change, or named decision. Analytical and generative outputs must name what would falsify or change their position, and must distinguish validated evidence from assumptions.
+**R-01 — Session outcomes and claims.** Every material session produces a running artifact, committed change, named decision, or direct answer/action. Durable artifacts are created or updated only when they govern behavior, preserve non-recoverable evidence, enable low-context restart, or are the requested deliverable; otherwise do the work directly and leave the result in the response, existing code, or git history. Analytical and generative outputs must name what would falsify or change their position, and must distinguish validated evidence from assumptions. Material final reports must not stop at recap: they must name the implication for the work and either the next action, the next question, or why no follow-up is needed.
 
 **R-02 — Federal-rule admission.** A federal rule must be plain-language, load-bearing, layer-correct, falsifiable, and tied to at least one principle. Rules that fail this test move to an environment, state, workflow, capability registry, or archive.
 
