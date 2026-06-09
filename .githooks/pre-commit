@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# cleanliness gate (universal-layer U6) — blocks a new proliferation copy; bypass: SKIP=cleanliness
+bash "$HOME/Documents/vaults/jarvis-one/.ai/hooks/pre-commit-cleanliness.sh" || exit 1
 set -euo pipefail
 VAULT=~/Documents/vaults/jarvis-one
 
